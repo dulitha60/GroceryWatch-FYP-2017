@@ -75,19 +75,19 @@
             <!-- navbar-header -->
 
             <ul class="nav navbar-top-links navbar-right navbar-nav">
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                
+                <li>   
+                    <a class="dropdown-toggle" data-toggle="dropdown">
                         <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-messages">
-                   
-                        
+                         
                     </ul>
-                    <!-- /.dropdown-messages -->
+                    
                 </li>
                 
                 <!-- /.dropdown -->
-                <li class="dropdown">
+                <li>
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
@@ -96,19 +96,10 @@
                 </li>
                 
                 <!-- /.dropdown -->
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
-                        </li>
-                    </ul>
+                <li>
+                    
+                        <a href="login.php"> Logout</a>
+                       
                     <!-- /.dropdown-user -->
                 </li>
             </ul>
