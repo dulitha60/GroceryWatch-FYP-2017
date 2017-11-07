@@ -70,7 +70,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Grocery Watch</a>
+                <a class="navbar-brand" href="inde.php">Grocery Watch</a>
             </div>
             <!-- navbar-header -->
 
@@ -128,7 +128,7 @@
                         </li>
                         
                         <li>
-                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
+                            <a href="tables.php"><i class="fa fa-table fa-fw"></i> Tables</a>
                         </li>
                         
                         <li>
@@ -205,7 +205,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#">
+                                <a href="drinks.php">
                                     <div class="panel-footer">
                                         <span class="pull-left">View Details</span>
                                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>

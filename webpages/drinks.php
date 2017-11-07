@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Vegetables</title>
+        <title>drinks</title>
         <meta name="viewport" content="width=device-width, intial-scale=1.0" />
         
         <!-- Bootstrap -->
@@ -114,18 +114,15 @@
                 
                  <div class="row">
                         <div class="col-lg-12">
-                            <h1 class="page-header">Vegetables</h1> 
+                            <h1 class="page-header">Drinks</h1> 
                         </div>
                 </div>
-                
-
-                
-            <!-- Retrieving data from vagetable data from the database -->
+                   
                 
               <?php
-                $link = mysqli_connect("localhost", "root", "rootroot", "vegetables"); 
+                $link = mysqli_connect("localhost", "root", "rootroot", "drinks"); 
                 
-                $sql = "SELECT id, name, time, weight FROM vegedata";
+                $sql = "SELECT id, name, time, quantity FROM drinksdata";
                 $result = $link->query($sql);
                 
                 echo "<table class='table table-hover thead-inverse'>";
@@ -134,7 +131,7 @@
                     echo "<th>ID</th>";
                     echo "<th>Name</th>";
                     echo "<th>Time</th>";
-                    echo "<th>Weight</th>";
+                    echo "<th>quantity</th>";
 				echo "</tr>";
                 
                 if ($result->num_rows > 0) {
@@ -145,7 +142,7 @@
 						echo "<td>" . $row["id"] . "</td>";
 						echo "<td>" . $row["name"] . "</td>";
 						echo "<td>" . $row["time"] . "</td>";
-                        echo "<td>" . $row["weight"] . "</td>";
+                        echo "<td>" . $row["quantity"] . "</td>";
 						echo "</tr>";			
 					}
 				} else {
@@ -156,7 +153,7 @@
             
                 ?>
 
-                <!-- testing END -->
+                
          
                 
                     
