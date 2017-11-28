@@ -145,7 +145,21 @@
 						echo "<td>" . $row["id"] . "</td>";
 						echo "<td>" . $row["name"] . "</td>";
 						echo "<td>" . $row["time"] . "</td>";
-                        echo "<td>" . $row["weight"] . "</td>";
+                        if($row["weight"]){
+                            echo "<td>" . $row["weight"] . "</td>";
+                                
+                                $to = "dulitha60@hotmail.com";
+                                $subject = "Alert!";
+                                $txt = "Hey,You are runing low on your vegetables. Would you like to order online?";
+                                $headers = "From: dulitha60@gmail.com" . "\r\n" .
+                                "CC: dulithamrin@yahoo.com";
+
+                                mail($to,$subject,$txt,$headers);
+                            
+                        }else{
+                            echo "<td>" . $row["weight"] . "</td>";
+                            
+                        }
 						echo "</tr>";			
 					}
 				} else {

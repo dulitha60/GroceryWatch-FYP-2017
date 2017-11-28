@@ -158,7 +158,21 @@
                                                     echo "<th>ID</th>";
                                                     echo "<th>Name</th>";
                                                     echo "<th>Time</th>";
-                                                    echo "<th>Weight</th>";
+                                                    if($row["Water"]>16){
+                                                        echo "<td>" . $row["Water"] . "</td>";
+
+                                                        $to = "dulitha60@hotmail.com";
+                                                        $subject = "Grocery Watch Alert!";
+                                                        $txt = "Hey,You are runing low on your water. Would you like to order online?";
+                                                        $headers = "From: groceryfyp@gmail.com" . "\r\n" .
+                                                        "CC: dulithamrin@yahoo.com";
+
+                                                        mail($to,$subject,$txt,$headers);
+
+                                                    }else{
+                                                        echo "<td>" . $row["weight"] . "</td>";
+
+                                                    }
                                                 echo "</tr>";
 
                                                 if ($result->num_rows > 0) {
